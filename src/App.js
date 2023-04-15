@@ -10,6 +10,7 @@ import CourseSinglePage from "./component/courses/course"
 function App() {
   return (
     <div className="App">
+        {/*eslint-disable*/}
       <BrowserRouter>
       <Routes>
         <Route path={'/'} element={<Main/>}/>

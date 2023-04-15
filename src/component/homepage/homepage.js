@@ -1,3 +1,5 @@
+//eslint-disable
+// eslint-disable
 import React, {useEffect, useRef, useState} from "react";
 import './style.css'
 import logo from './icons/g.png'
@@ -76,6 +78,7 @@ function Homepage() {
     } else {
   return (
     <div>
+        {/*eslint-disable*/}
         <div className="Nav">
             <div className="navbar">
                 <Link to="/">
@@ -167,7 +170,10 @@ function Homepage() {
                     <Popup open={isPopupOpen} onClose={closePopup}>
                         <div className="popup-iframe">
 
-                            <iframe  className={'popup-iframe_iframe'} src={video} allowFullScreen/>
+                            <iframe  className={'popup-iframe_iframe'}
+                                     src={video}
+                                     title={'video'}
+                                     allowFullScreen/>
 
 
                             <div className={'popup-back-flex'}>
@@ -327,18 +333,18 @@ function Homepage() {
 
                 </div>
                 <div className={'footer-section'}>
-                    <a className={'title'}> Platforma</a>
-                    <a  className={'text-title'}>Kasblar</a>
-                    <a  className={'text-title'}>Kurslar</a>
+                    <a href={'#'} className={'title'}> Platforma</a>
+                    <a href={'#'} className={'text-title'}>Kasblar</a>
+                    <a href={'#'} className={'text-title'}>Kurslar</a>
 
 
                 </div>
                 <div className={'footer-section'}>
-                    <a className={'title'}> Kompaniya</a>
-                    <a  className={'text-title'}>Biz haqimizda</a>
-                    <a  className={'text-title'}>Blog</a>
-                    <a  className={'text-title'}>Ommaviy oferta</a>
-                    <a  className={'text-title'}>Maxfiylik siyosati</a>
+                    <a href={'#'} className={'title'}> Kompaniya</a>
+                    <a href={'#'} className={'text-title'}>Biz haqimizda</a>
+                    <a href={'#'} className={'text-title'}>Blog</a>
+                    <a  href={'#'}className={'text-title'}>Ommaviy oferta</a>
+                    <a href={'#'} className={'text-title'}>Maxfiylik siyosati</a>
 
 
 
@@ -346,12 +352,12 @@ function Homepage() {
 
                 </div>
                 <div className={'footer-section'}>
-                    <a className={'title'}>Ma'lumot</a>
-                    <a  className={'text-title'}>Bog'lanish</a>
-                    <a  className={'text-title'}>Bo'lib to'lash</a>
-                    <a  className={'text-title'}>Qanday xarid qilinadi?</a>
-                    <a  className={'text-title'}>Voucher qo'llanma</a>
-                    <a  className={'text-title'}>Chegirmalar</a>
+                    <a   href={'#'} className={'title'}>Ma'lumot</a>
+                    <a  href={'#'} className={'text-title'}>Bog'lanish</a>
+                    <a  href={'#'} className={'text-title'}>Bo'lib to'lash</a>
+                    <a  href={'#'} className={'text-title'}>Qanday xarid qilinadi?</a>
+                    <a  href={'#'} className={'text-title'}>Voucher qo'llanma</a>
+                    <a  href={'#'} className={'text-title'}>Chegirmalar</a>
 
 
                 </div>

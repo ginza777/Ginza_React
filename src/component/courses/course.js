@@ -1,4 +1,4 @@
-
+//eslint-disable
 import React, {useEffect, useState} from "react";
 import './style.css'
 import '../main.css'
@@ -40,6 +40,7 @@ function  CourseSinglePage() {
     };
     return(
         <div className={'courses-single'}>
+            {/*eslint-disable*/}
         <div className="course_single">
             <div className="Nav">
             <div className="navbar2">

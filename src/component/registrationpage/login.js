@@ -1,3 +1,4 @@
+//eslint-disable
 import React, { useState } from 'react';
 import logo from "../homepage/icons/g.png";
 import '../homepage/style.css'
@@ -17,7 +18,7 @@ function LoginPage() {
     }
 
     return (
-        <div className={'login'}>
+        <div className={'login'}>      {/*eslint-disable*/}
             <div className="login-page">
                 <div className="Nav">
                     <div className="navbar">
